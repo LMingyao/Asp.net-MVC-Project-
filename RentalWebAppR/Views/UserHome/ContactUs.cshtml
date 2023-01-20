@@ -1,0 +1,170 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout _Client.cshtml";
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="~/Stack/css/style.css" />
+}
+
+<h3>Contact us</h3>
+<p>
+    Welcome to our website, discover your favourite accomodations
+    <br />
+    Contact us if you have any concerns, or you have found your ideal accomodations<br />
+    You can use the form below to send us messages after your successful login
+</p>
+
+
+@model RentalWebAppR.Models.Message
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()<div class="form-horizontal">
+
+    @if (Session["UserName"] != null)
+    {
+
+
+        <section class="exclusive-section">
+            <section class="sub-title">
+                <h2></h2>
+            </section>
+            <section class="exclusive-items">
+                <section>
+                    <img src="~/Stack/image/image-1.png" alt="London" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-2.png" alt="Swltzerland" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-3.png" alt="Australia" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-4.png" alt="France" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-5.png" alt="Amsterdom" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-6.png" alt="Netherlands" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-7.png" alt="New York" />
+                    <span>
+
+                    </span>
+                </section>
+
+            </section>
+        </section>
+
+        <h4>Message</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Message1, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Message1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Message1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownList("TenantUserId", null, htmlAttributes: new { @class = "form-control", @disabled = "disabled" })
+                    @Html.ValidationMessageFor(model => model.TenantUserId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.DropDownList("EmployeeUserId", null, htmlAttributes: new { @class = "form-control", @disabled = "disabled" })
+                    @Html.ValidationMessageFor(model => model.EmployeeUserId, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Contact us" class="btn btn-default" />
+            </div>
+        </div>
+    }
+    else
+    {
+        <section class="exclusive-section">
+            <section class="sub-title">
+                <h2></h2>
+            </section>
+            <section class="exclusive-items">
+                <section>
+                    <img src="~/Stack/image/image-1.png" alt="London" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-2.png" alt="Swltzerland" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-3.png" alt="Australia" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-4.png" alt="France" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-5.png" alt="Amsterdom" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-6.png" alt="Netherlands" />
+                    <span>
+
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-7.png" alt="New York" />
+                    <span>
+
+                    </span>
+                </section>
+
+            </section>
+        </section>
+    }
+</div>
+}
+

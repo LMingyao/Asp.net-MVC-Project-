@@ -1,0 +1,87 @@
+2022-12-01 7:20:20 PM	This log contains information about the import schema operation into project 'PropertyRentalManagerDB' on computer 'DESKTOP-A2E5028' by user '31042'.
+2022-12-01 7:20:21 PM	Import of database schema has started.
+2022-12-01 7:20:27 PM	Gathering database credentials
+2022-12-01 7:20:27 PM	Gathering database options
+2022-12-01 7:20:27 PM	Gathering generic database scoped configuration option
+2022-12-01 7:20:27 PM	Gathering users
+2022-12-01 7:20:27 PM	Gathering roles
+2022-12-01 7:20:27 PM	Gathering application roles
+2022-12-01 7:20:27 PM	Gathering role memberships
+2022-12-01 7:20:27 PM	Gathering filegroups
+2022-12-01 7:20:27 PM	Gathering full-text catalogs
+2022-12-01 7:20:27 PM	Gathering assemblies
+2022-12-01 7:20:27 PM	Gathering certificates
+2022-12-01 7:20:27 PM	Gathering asymmetric keys
+2022-12-01 7:20:27 PM	Gathering symmetric keys
+2022-12-01 7:20:27 PM	Gathering encrypted symmetric keys
+2022-12-01 7:20:27 PM	Gathering schemas
+2022-12-01 7:20:27 PM	Gathering XML schema collections
+2022-12-01 7:20:27 PM	Gathering user-defined data types
+2022-12-01 7:20:27 PM	Gathering user-defined types
+2022-12-01 7:20:27 PM	Gathering table types
+2022-12-01 7:20:27 PM	Gathering unique keys for table types
+2022-12-01 7:20:27 PM	Gathering primary keys for table types
+2022-12-01 7:20:27 PM	Gathering indexes for table types
+2022-12-01 7:20:28 PM	Gathering check constraints for table types
+2022-12-01 7:20:28 PM	Gathering default constraints for table types
+2022-12-01 7:20:28 PM	Gathering partition functions
+2022-12-01 7:20:28 PM	Gathering partition schemes
+2022-12-01 7:20:31 PM	Gathering functions
+2022-12-01 7:20:31 PM	Gathering encrypted functions
+2022-12-01 7:20:31 PM	Gathering aggregates
+2022-12-01 7:20:31 PM	Gathering procedures
+2022-12-01 7:20:31 PM	Gathering encrypted procedures
+2022-12-01 7:20:31 PM	Gathering tables
+2022-12-01 7:20:32 PM	Gathering primary keys
+2022-12-01 7:20:32 PM	Gathering unique constraints
+2022-12-01 7:20:32 PM	Gathering foreign keys
+2022-12-01 7:20:32 PM	Gathering default constraints
+2022-12-01 7:20:32 PM	Gathering check constraints
+2022-12-01 7:20:32 PM	Gathering views
+2022-12-01 7:20:32 PM	Gathering encrypted views
+2022-12-01 7:20:32 PM	Gathering indexes
+2022-12-01 7:20:32 PM	Gathering statistics
+2022-12-01 7:20:32 PM	Gathering full-text index stoplists
+2022-12-01 7:20:32 PM	Gathering search property lists
+2022-12-01 7:20:32 PM	Gathering search properties
+2022-12-01 7:20:32 PM	Gathering full-text indexes
+2022-12-01 7:20:32 PM	Gathering column store indexes
+2022-12-01 7:20:32 PM	Gathering spatial indexes
+2022-12-01 7:20:32 PM	Gathering XML indexes
+2022-12-01 7:20:32 PM	Gathering Selective XML indexes
+2022-12-01 7:20:32 PM	Gathering encrypted triggers
+2022-12-01 7:20:32 PM	Gathering triggers
+2022-12-01 7:20:32 PM	Gathering encrypted and clr ddl triggers
+2022-12-01 7:20:32 PM	Gathering ddl triggers
+2022-12-01 7:20:32 PM	Gathering synonyms
+2022-12-01 7:20:32 PM	Gathering defaults
+2022-12-01 7:20:32 PM	Gathering data constraint uddt bindings
+2022-12-01 7:20:32 PM	Gathering rules
+2022-12-01 7:20:32 PM	Gathering data constraint uddt bindings
+2022-12-01 7:20:32 PM	Gathering message types
+2022-12-01 7:20:32 PM	Gathering queues
+2022-12-01 7:20:32 PM	Gathering contracts
+2022-12-01 7:20:32 PM	Gathering services
+2022-12-01 7:20:32 PM	Gathering event notifications
+2022-12-01 7:20:32 PM	Gathering remote service bindings
+2022-12-01 7:20:32 PM	Gathering broker priorities
+2022-12-01 7:20:32 PM	Gathering signatures
+2022-12-01 7:20:32 PM	Gathering data compression options
+2022-12-01 7:20:32 PM	Gathering sequence types
+2022-12-01 7:20:32 PM	Gathering security policies
+2022-12-01 7:20:32 PM	Gather column encryption keys
+2022-12-01 7:20:32 PM	Gathering column master keys
+2022-12-01 7:20:32 PM	Gathering external data sources
+2022-12-01 7:20:32 PM	Gathering external file formats
+2022-12-01 7:20:32 PM	Gathering external tables
+2022-12-01 7:20:32 PM	Gathering database permissions
+2022-12-01 7:20:32 PM	Gathering extended properties
+2022-12-01 7:20:32 PM	Gathering assemblies
+2022-12-01 7:20:32 PM	Gathering credentials
+2022-12-01 7:20:32 PM	Gathering logins
+2022-12-01 7:20:32 PM	Gathering server audits
+2022-12-01 7:20:34 PM	Scanning project for duplicate elements
+2022-12-01 7:20:34 PM	Finished duplicate element processing
+2022-12-01 7:20:35 PM	Finished importing database.
+2022-12-01 7:20:35 PM	A summary of the import was saved to the following location: C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\Import Schema Logs\PropertyRentalManage_20221202122020.log
+2022-12-01 7:20:35 PM	Click Finish to continue...

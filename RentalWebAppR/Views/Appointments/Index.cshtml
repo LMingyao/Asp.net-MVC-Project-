@@ -1,0 +1,51 @@
+﻿@model IEnumerable<RentalWebAppR.Models.Appointment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee.EmployeeUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tenant.TenantUserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee.EmployeeUserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tenant.TenantUserId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AppointmentId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AppointmentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AppointmentId })
+        </td>
+    </tr>
+}
+
+</table>

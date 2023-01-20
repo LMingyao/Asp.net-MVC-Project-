@@ -1,0 +1,44 @@
+﻿@model IEnumerable<RentalWebAppR.Models.User>
+@{
+
+    Layout = "~/Views/Shared/_Layout _Client.cshtml";
+    if (Session["UserName"] == null)    
+    {
+
+    }
+}
+
+<table class="table">
+    <tr>
+        <th>My Account Information</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ULastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UPhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserType)
+            </td>
+            @*<td>
+                @Html.ActionLink("Edit", "EditMA", "Users",new { id = item.UserId }) |
+                @Html.ActionLink("Details", "DetailsMA","Users", new { id = item.UserId })
+            </td>*@
+        </tr>
+    }
+
+</table>

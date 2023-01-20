@@ -1,0 +1,209 @@
+﻿@model IEnumerable<RentalWebAppR.Models.Address>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout _Client.cshtml";
+}  
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome css link -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="~/Stack/css/style.css" />
+    <title>House Rental</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">  
+        <section class="header-searchbar">
+            <section class="searchbar-title">
+                <br />
+                <br /> <br />
+                <br /><br />
+                <br /><br />
+                <br />
+                <h1>Find Your Favourite Accommodations</h1>
+            </section>
+            <section class="searchbar-form">
+                
+                  
+                    @*<section class="search-input search-border">
+                        <label>Location</label>
+                        <input class="form-control" type="text" name="CitySearch" placeholder="Choose your city"  />
+                        
+                    </section>
+                    <section class="search-input search-border">
+                        <label>Type</label>
+
+                        <input type="text" placeholder="Choose your ideal type of accommodation" />
+                    </section>*@
+                         
+                    <!---------------------------------------------------------------------------->
+                    <section class="searchbar-submit-btn">
+
+                        <button class="Button" type="submit">
+
+                            <li>@Html.ActionLink("Starting Search", "SearchBuilingsByCity", "UserHome")</li>
+
+                            <img src="~/Stack/image/search.png" alt="search" />
+
+
+
+
+                        </button>
+
+                      
+                    </section>
+               
+                    
+
+            </section>
+        </section>
+    </header>
+    <!-- main -->
+    <main>
+
+        <!-- Trending place section -->
+        <section class="trending-section">
+            <section class="sub-title">
+                <h2>Top Cities</h2>
+            </section>
+            <section class="trending-items">
+                <section>
+                    <img src="~/Stack/image/yul.jpg" alt="Montreal" />
+                    <h3>Montreal</h3>
+                </section>
+                <section>
+                    <img src="~/Stack/image/yqb.jpg" alt="Quebec City" />
+                    <h3>Quebec City</h3>
+                </section>
+                <section>
+                    <img src="~/Stack/image/yow.jpg" alt="Gatineau" />
+                    <h3>Gatineau/Ottawa</h3>
+                </section>
+                <section>
+                    <img src="~/Stack/image/yyz.jpg" alt="Toronto" />
+                    <h3>Toronto</h3>
+                </section>
+                <section>
+                    <img src="~/Stack/image/yvr.jpg" alt="Vancouver" />
+                    <h3>Vancouver</h3>
+                </section>
+                @*<section>
+                    <img src="~/Stack/image/yhz.jpg" alt="Halifax" />
+                    <h3>Halifax</h3>
+                </section>*@
+            </section>
+        </section>
+
+        <!-- cta section -->
+
+        <section class="cta-section">
+            <h3>Checking <br />Our featured rentals</h3>
+            <p>
+                <br />
+            </p>
+            <a href="#" class="cta-btn">Read More</a>
+        </section>
+
+
+
+
+
+
+
+
+        @*<p>Are you ready for choosing your favorite apartment?</p>
+        <p>Choose the address first ---></p>
+        <p>
+
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.StreetNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StreetName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Province)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostalCode)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StreetNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StreetName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Province)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostalCode)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.AddressId })
+                    </td>
+                </tr>
+            }
+
+        </table>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- scripts -->
+        <script src="~/Stack/js/script.js"></script>
+</body>
+</html>
+

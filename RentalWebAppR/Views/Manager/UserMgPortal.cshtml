@@ -1,0 +1,16 @@
+﻿
+@{
+    if (Session["UserName"] == null)
+    {
+        Response.Redirect("~/Manager/Login");
+    }
+    ViewBag.Title = "User Management Portal";
+}
+<h2>Please select your further operations</h2>
+<br />
+<h3>
+    <a href="https://localhost:44397/users">User Accounts Management</a> <br /><br />
+    <a href="https://localhost:44397/tenants">Tenant accounts Management</a> <br /><br />
+    <a href="https://localhost:44397/employees">Employee accounts Management</a> <br /><br />
+</h3>
+

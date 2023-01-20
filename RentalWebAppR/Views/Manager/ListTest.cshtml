@@ -1,0 +1,69 @@
+﻿@model IEnumerable<RentalWebAppR.Models.UserModel>
+
+@{
+    ViewBag.Title = "ListTest";
+}
+
+<h2>ListTest</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ULastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ULastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UPhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

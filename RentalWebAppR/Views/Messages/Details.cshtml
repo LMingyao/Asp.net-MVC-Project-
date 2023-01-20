@@ -1,0 +1,42 @@
+﻿@model RentalWebAppR.Models.Message
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Message</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Message1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.EmployeeUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.EmployeeUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tenant.TenantUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenant.TenantUserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MessageId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

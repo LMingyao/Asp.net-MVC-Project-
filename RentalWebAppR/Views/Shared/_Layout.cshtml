@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Property Rental Manager Portal", "Index", "Manager", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("Home", "Index", "Manager")</li>*@
+                  
+                    <li>@Html.ActionLink("Accounts Management", "UserMgPortal", "Manager")</li>
+                    <li>@Html.ActionLink("Properties Management", "PropertyMgPortal", "Manager")</li>
+                    <li>@Html.ActionLink("Tenants side Management", "TenantSideMg", "Manager")</li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    @if (Session["UserName"] == null)
+                    {
+                        <li>@Html.ActionLink("Login", "Login", "Manager")</li>
+                    }
+                    else
+                    {
+                        <li class="text-center" style="color: white">Bonjour @Session["UserName"]!</li>
+                        <li>@Html.ActionLink("Log out", "SignOut", "Manager")</li>
+                    }
+
+
+                    @*<li>@Html.ActionLink("Sign up", "SignUp", "Manager")</li>*@
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Property Rental Inc - De Montréal, Québec</p>
+            <p> <a href="https://localhost:44397/UserHome">Tenants Entry</a> </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

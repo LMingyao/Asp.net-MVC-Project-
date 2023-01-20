@@ -1,0 +1,10 @@
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\bin\Debug\PropertyRentalManagerDB.dacpac
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\bin\Debug\PropertyRentalManagerDB.dll
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\bin\Debug\PropertyRentalManagerDB.pdb
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\PropertyRentalManagerDB.sqlproj.AssemblyReference.cache
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\Model.xml
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\refactor.xml
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\postdeploy.sql
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\predeploy.sql
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\PropertyRentalManagerDB.dll
+C:\Users\31042\source\repos\RentalWebAppR\PropertyRentalManagerDB\obj\Debug\PropertyRentalManagerDB.pdb

@@ -1,0 +1,66 @@
+﻿@model RentalWebAppR.Models.Rental
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rental</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apartment.ApartmentType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apartment.ApartmentType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.EmployeeUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.EmployeeUserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tenant.TenantUserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenant.TenantUserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentalId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

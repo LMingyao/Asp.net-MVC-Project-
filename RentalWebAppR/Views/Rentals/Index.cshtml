@@ -1,0 +1,63 @@
+﻿@model IEnumerable<RentalWebAppR.Models.Rental>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apartment.ApartmentType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee.EmployeeUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tenant.TenantUserId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RentalPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apartment.ApartmentType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee.EmployeeUserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tenant.TenantUserId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RentalId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RentalId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RentalId })
+        </td>
+    </tr>
+}
+
+</table>

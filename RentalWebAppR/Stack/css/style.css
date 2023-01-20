@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,500&display=swap");
+
+/* default sytles */
+.navbar-inverse {
+    background-color: #fff !important;
+}
+
+.navbar-brand {
+    color: black !important
+}
+
+    .navbar-brand:visited {
+        color: black !important
+    }
+
+.navbar-default-color {
+    color: black !important
+}
+
+.navbar-inverse {
+    color: black !important
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: black;
+    }
+
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+        color: black;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        color: grey;
+    }
+
+    .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a {
+        color: black;
+    }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+/* custom sytles */
+
+.header {
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../Stack/image/montreal_rk.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* header menu style */
+
+ 
+
+/* header searchBar style */
+
+.header-searchbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+}
+.searchbar-title h1 {
+  font-size: 3vw;
+  color: white;
+}
+.searchbar-form form {
+    display: flex;
+    justify-content: space-evenly;
+    background: orangered;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 3rem;
+}
+.searchbar-form form section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1.5rem;
+}
+.search-input {
+  width: 8rem;
+}
+.search-input:first-of-type {
+  width: 12rem;
+}
+.searchbar-form form section label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.search-border {
+  border-right: 1px solid rgba(112, 112, 112, 0.486);
+}
+.searchbar-submit-btn button {
+  background: tomato;
+  color: orange;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.searchbar-submit-btn button img {
+  width: 1rem;
+}
+
+main {
+  margin: 0 3rem;
+}
+
+/* exclusive section & trending section styles */
+
+.exclusive-section,
+.trending-section {
+  padding: 2rem 0;
+}
+.sub-title {
+  font-size: 2vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.795);
+}
+.exclusive-items,
+.trending-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.exclusive-items section {
+  position: relative;
+  margin: 1.5rem 0.7rem;
+}
+.exclusive-items section img {
+  width: 14rem;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.trending-items section img {
+  width: 18rem;
+  margin: 1.5rem 0.7rem;
+  border-radius: 1rem;
+}
+
+.exclusive-items section span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 20;
+}
+
+.trending-items section h3 {
+  margin: 0.2rem 0.7rem;
+  font-weight: 500;
+}
+
+/* cta section styles */
+
+.cta-section {
+  margin: 5rem 0;
+  background-image: linear-gradient(to right, #3f2321, transparent),
+    url("../image/yvr_xas.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+}
+
+.cta-section h3 {
+  font-size: 4vw;
+  line-height: 5.3vw;
+  font-weight: 500;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ff5361;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* travellers section styles */
+
+.travellers-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.travellers-items section {
+  position: relative;
+  margin: 1rem;
+}
+.travellers-items section img {
+  width: 20rem;
+  border-radius: 1rem;
+  z-index: -1;
+}
+.travellers-items section p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.travellers-btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.travellers-btn a {
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  background-color: rgba(223, 34, 1, 0.808);
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* about section styles */
+
+.about-section {
+  text-align: center;
+  margin: 80px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.about-title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+footer,
+footer a {
+  color: rgb(78, 78, 78);
+}
+.footer-socil-icons {
+  width: 70%;
+  margin: 0.5rem auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+}
+.footer-socil-icons a {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+.footer-copyright {
+  margin: 1rem 0;
+}
+
+/* make responsive */
+
+@media only screen and (max-width: 800px) {
+  header {
+    max-height: 145vh;
+  }
+
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background: #000;
+    z-index: 1000;
+  }
+
+  .navbar-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .navbar-row:nth-child(2) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .header-searchbar {
+    margin: 1%;
+  }
+
+  .searchbar-title h1 {
+    font-size: 5vw;
+    padding-top: 6rem;
+  }
+  .searchbar-form form {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.4rem;
+  }
+  .search-border {
+    border-right: none;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.616);
+  }
+  .search-input {
+    width: 78% !important;
+    margin: 0.1rem;
+    padding: 0.3rem;
+  }
+  .searchbar-form form section label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0;
+  }
+  .searchbar-submit-btn button {
+    position: absolute;
+    left: 40%;
+    bottom: -15%;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .sub-title {
+    font-size: 5vw;
+  }
+}
+
+/* house list styles */
+
+/* header styles */
+
+.house-list-header {
+  height: 5rem;
+}
+
+.navbar-white {
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-white .navbar-menu ul li a {
+  color: #000;
+}
+.navbar-white .navbar-register-btn a {
+  background: #ff5361;
+  color: #fff;
+}
+.navbar-white .menu-burger-btn {
+  color: #000;
+}
+.navbar-white .navbar-menu ul li:first-child:before {
+  background: #ff5361;
+}
+
+/* house list style */
+
+.lists-container {
+  margin: 1.7rem 5rem;
+}
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.house-list {
+  flex-basis: 70%;
+}
+.house-list-title {
+  padding: 1rem 0 1.5rem;
+}
+
+.house-list-title h1 {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.house {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.8rem 0;
+  border-top: 1px solid rgba(153, 153, 153, 0.616);
+}
+
+.house-img {
+  flex-basis: 40%;
+}
+
+.house-img img {
+  width: 100%;
+  border-radius: 0.9rem;
+}
+
+.house-info {
+  margin-left: 0.2rem;
+  flex-basis: 57%;
+  color: #555;
+}
+
+.house-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.house-rate {
+  margin-top: 0.5rem;
+  color: rgb(255, 136, 0);
+}
+
+.house-price {
+  text-align: right;
+  font-size: 0.8rem;
+}
+.house-price h4 {
+  font-size: 1.2rem;
+}
+.house-price h4 > span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* sidebr filters style */
+
+.filters-list {
+  flex-basis: 25%;
+}
+
+ 
+.sidebar-title h2 {
+  font-weight: 500;
+}
+.sidebar-title h3 {
+  font-weight: 500;
+  margin: 0.8rem 0 0.7rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+.filter p {
+  flex: 1;
+}
+.filter input {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.sidebar-link {
+  text-align: right;
+  margin: 1.5rem 0;
+}
+.sidebar-link a {
+  color: #fff;
+  background-color: #ff5361;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+}
+
+/* pagination styles */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.pagination img {
+  width: 0.8rem;
+  margin: 0.7rem 1.1rem;
+}
+.pagination span {
+  margin: 0.7rem 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination .current {
+  background: #333333;
+  color: #fff;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
+
+/* responsive house list page*/
+
+ 
+
+

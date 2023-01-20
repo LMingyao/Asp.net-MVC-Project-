@@ -1,0 +1,15 @@
+﻿@{
+    if (Session["UserName"] == null)
+    {
+        Response.Redirect("~/Manager/Login");
+    }
+    ViewBag.Title = "Tenant Orientation Affairs Management Portal";
+}
+<h2>Please select your further operations</h2>
+<br />
+<h3>
+    <a href="https://localhost:44397/messages">Tenants Messages Management Panel</a> <br /><br />
+    <a href="https://localhost:44397/appointments">Tenants Appointments Management Panel</a> <br /><br />
+    <a href="https://localhost:44397/rentals">Tenants Rentals Management Panel</a> <br /><br />
+</h3>
+

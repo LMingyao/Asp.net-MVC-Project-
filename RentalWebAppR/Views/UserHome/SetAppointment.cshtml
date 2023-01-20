@@ -1,0 +1,232 @@
+﻿@model RentalWebAppR.Models.Appointment
+@{
+    Layout = "~/Views/Shared/_Layout _Client.cshtml";
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="~/Stack/css/style.css" />
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="~/Stack/css/style.css" />
+    if (Session["UserName"] != null)
+    {
+
+<div class="form-horizontal">
+    <h4>Appointment</h4>
+    <section class="exclusive-section">
+        <section class="sub-title">
+            <h2></h2>
+        </section>
+        <section class="exclusive-items">
+            <section>
+                <img src="~/Stack/image/image-1.png" alt="London" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-2.png" alt="Swltzerland" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-3.png" alt="Australia" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-4.png" alt="France" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-5.png" alt="Amsterdom" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-6.png" alt="Netherlands" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-7.png" alt="New York" />
+                <span>
+
+                </span>
+            </section>
+     
+        </section>
+    </section>
+    <h5>Please be aware that this appoitment you have created will include the apartment information that you have chosen </h5>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.AppointmentId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AppointmentId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AppointmentId, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AppointmentDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AppointmentDate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AppointmentDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AppointmentTime, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AppointmentTime, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AppointmentTime, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.TenantUserId, "TenantUserId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("TenantUserId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.TenantUserId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmployeeUserId, "EmployeeUserId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("EmployeeUserId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.EmployeeUserId, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+        <br/>
+
+        <p>
+            Do not want to make an appointment now? <br />
+            <a href="https://localhost:44397/UserHome/ContactUs"> Send us an email instead! </a>
+        </p>
+
+    </div>
+</div>
+    }
+    else
+    {
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <p>
+            Caution, Please Login first to make an appointment.<br />
+            Thank you.
+        </p>
+ 
+
+
+        <section class="exclusive-section">
+            <section class="sub-title">
+                <h2></h2>
+            </section>
+            <section class="exclusive-items">
+                <section>
+                    <img src="~/Stack/image/image-1.png" alt="London" />
+                    <span>
+                        
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-2.png" alt="Swltzerland" />
+                    <span>
+                       
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-3.png" alt="Australia" />
+                    <span>
+                        
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-4.png" alt="France" />
+                    <span>
+                       
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-5.png" alt="Amsterdom" />
+                    <span>
+                       
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-6.png" alt="Netherlands" />
+                    <span>
+                      
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-7.png" alt="New York" />
+                    <span>
+                         
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-8.png" alt="Chicago" />
+                    <span>
+                      
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-9.png" alt="San Francisco" />
+                    <span>
+                      
+                    </span>
+                </section>
+                <section>
+                    <img src="~/Stack/image/image-10.png" alt="Shanghai" />
+                    <span>
+                       
+                    </span>
+                </section>
+            </section>
+        </section>
+
+
+
+
+    }
+
+}
+
+<div>
+    @Html.ActionLink("Back to home", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

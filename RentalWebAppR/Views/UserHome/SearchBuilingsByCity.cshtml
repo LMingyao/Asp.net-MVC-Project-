@@ -1,0 +1,137 @@
+﻿@model IEnumerable<RentalWebAppR.Models.BuildingFinal>
+@{
+    Layout = "~/Views/Shared/_Layout _Client.cshtml";
+}
+
+@using (Html.BeginForm("SearchBuilingsByCity", "UserHome", FormMethod.Get))
+{<br/>
+<br/>
+<section class=" ">
+    <label>Your next apartment starts here...</label>
+    <br />
+    <section class="exclusive-section">
+        <section class="sub-title">
+            <h2></h2>
+        </section>
+        <section class="exclusive-items">
+            <section>
+                <img src="~/Stack/image/image-1.png" alt="London" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-2.png" alt="Swltzerland" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-3.png" alt="Australia" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-4.png" alt="France" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-5.png" alt="Amsterdom" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-6.png" alt="Netherlands" />
+                <span>
+
+                </span>
+            </section>
+            <section>
+                <img src="~/Stack/image/image-7.png" alt="New York" />
+                <span>
+
+                </span>
+            </section>
+
+        </section>
+    </section>
+    <br/>
+
+    <input class="form-control" type="text" name="Search" placeholder="Input your City/specfic address/postal code here" />
+
+</section>
+    <br/>
+    <br/>
+
+    @*@Html.DropDownList("Search", new List<SelectListItem>
+{   new SelectListItem { Text = "11111 - Mary Brown", Value = "1", Selected = true },
+    new SelectListItem { Text = "22222 - Richard Green", Value = "2" },
+   new SelectListItem { Text = "33333 - Michael Freitag", Value = "Montreal" },
+   new SelectListItem { Text = "44444 - Mary Green", Value = "Quebec" },
+   new SelectListItem { Text = "55555 - John Abbot", Value = "55555" }},
+    "Select Teacher here")*@
+    <input type="submit" value=" Search " />
+
+}
+
+@if (Session["Search"] != null)
+{
+
+    <table class="table">
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuildingName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apartment)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Confirm", "SetAppointment", new { id = item.BuildingId })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+}

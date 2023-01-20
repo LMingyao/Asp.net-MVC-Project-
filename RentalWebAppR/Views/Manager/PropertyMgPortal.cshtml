@@ -1,0 +1,15 @@
+﻿@{
+    if (Session["UserName"] == null)
+    {
+        Response.Redirect("~/Manager/Login");
+    } 
+    ViewBag.Title = "Property Management Portal";
+}
+<h2>Please select your further operations</h2><br/>
+
+<h3>
+    <a href="https://localhost:44397/addresses">Addresses Management</a> <br /><br />
+    <a href="https://localhost:44397/Buildings">Buildings Management</a> <br /><br />
+    <a href="https://localhost:44397/Apartments">Apartments Management</a> <br /><br />
+
+</h3>

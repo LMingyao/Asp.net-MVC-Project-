@@ -1,0 +1,33 @@
+﻿@model IEnumerable<RentalWebAppR.Models.Tenant>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Account type < Tenant < Management Panel</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UFirstName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UFirstName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TenantUserId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TenantUserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TenantUserId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PropertyRentalManagementDBModelStoreContainer" CdmEntityContainer="PropertyRentalManagementDBEntities1">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Address">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+          <ScalarProperty Name="StreetName" ColumnName="StreetName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Apartments">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Apartment">
+        <MappingFragment StoreEntitySet="Apartments">
+          <ScalarProperty Name="ApartmentNumber" ColumnName="ApartmentNumber" />
+          <ScalarProperty Name="ApartmentType" ColumnName="ApartmentType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="BuildingId" ColumnName="BuildingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointments">
+          <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
+          <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
+          <ScalarProperty Name="AppointmentTime" ColumnName="AppointmentTime" />
+          <ScalarProperty Name="TenantUserId" ColumnName="TenantUserId" />
+          <ScalarProperty Name="EmployeeUserId" ColumnName="EmployeeUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Buildings">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Building">
+        <MappingFragment StoreEntitySet="Buildings">
+          <ScalarProperty Name="BuildingId" ColumnName="BuildingId" />
+          <ScalarProperty Name="BuildingName" ColumnName="BuildingName" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="EmployeeUserId" ColumnName="EmployeeUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Message">
+        <MappingFragment StoreEntitySet="Messages">
+          <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+          <ScalarProperty Name="Message1" ColumnName="Message" />
+          <ScalarProperty Name="TenantUserId" ColumnName="TenantUserId" />
+          <ScalarProperty Name="EmployeeUserId" ColumnName="EmployeeUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rentals">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Rental">
+        <MappingFragment StoreEntitySet="Rentals">
+          <ScalarProperty Name="RentalId" ColumnName="RentalId" />
+          <ScalarProperty Name="RentalPrice" ColumnName="RentalPrice" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ApartmentId" ColumnName="ApartmentId" />
+          <ScalarProperty Name="TenantUserID" ColumnName="TenantUserID" />
+          <ScalarProperty Name="EmployeeUserID" ColumnName="EmployeeUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedules">
+          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="ScheduleDate" ColumnName="ScheduleDate" />
+          <ScalarProperty Name="ScheduleTime" ColumnName="ScheduleTime" />
+          <ScalarProperty Name="TenantUserId" ColumnName="TenantUserId" />
+          <ScalarProperty Name="EmployeeUserId" ColumnName="EmployeeUserId" />
+          <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tenants">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.Tenant">
+        <MappingFragment StoreEntitySet="Tenants">
+          <ScalarProperty Name="TenantUserId" ColumnName="TenantUserId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="PropertyRentalManagementDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UFirstName" ColumnName="UFirstName" />
+          <ScalarProperty Name="ULastName" ColumnName="ULastName" />
+          <ScalarProperty Name="UEmail" ColumnName="UEmail" />
+          <ScalarProperty Name="UPhoneNumber" ColumnName="UPhoneNumber" />
+          <ScalarProperty Name="UPassword" ColumnName="UPassword" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

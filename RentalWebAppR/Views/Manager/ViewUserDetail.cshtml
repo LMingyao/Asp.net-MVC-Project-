@@ -1,0 +1,74 @@
+﻿@model RentalWebAppR.Models.UserModel
+
+@{
+    ViewBag.Title = "ViewUserDetail";
+}
+
+<h2>ViewUserDetail</h2>
+
+<div>
+    <h4>UserModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ULastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ULastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UPhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UPhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "ViewUsers")
+</p>

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<RentalWebAppR.Models.BuildingFinal>
+
+
+@using (Html.BeginForm("SearchBuilingsByCity", "BuildingFinals", FormMethod.Get))
+{
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    @Html.DropDownList("searching", new List<SelectListItem>
+{   new SelectListItem { Text = "11111 - Mary Brown", Value = "1", Selected = true },
+    new SelectListItem { Text = "22222 - Richard Green", Value = "2" },
+   new SelectListItem { Text = "33333 - Michael Freitag", Value = "Montreal" },
+   new SelectListItem { Text = "44444 - Mary Green", Value = "Quebec" },
+   new SelectListItem { Text = "55555 - John Abbot", Value = "55555" }},
+    "Select Teacher here")
+    <input type="submit" value="Get " />
+
+
+}
+
+@if (Session["Search"] != null)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BuildingName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuildingName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apartment)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BuildingId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.BuildingId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BuildingId })
+                </td>
+            </tr>
+        }
+
+    </table>
+}

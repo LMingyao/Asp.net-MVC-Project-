@@ -1,0 +1,10 @@
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\bin\Debug\Dapper.dll
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\bin\Debug\Dapper.xml
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\obj\Debug\DataLibrary.csproj.AssemblyReference.cache
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\obj\Debug\DataLibrary.pdb
+C:\Users\31042\source\repos\RentalWebAppR\DataLibrary\bin\Debug\DataLibrary.dll.config

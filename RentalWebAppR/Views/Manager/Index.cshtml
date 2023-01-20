@@ -1,0 +1,41 @@
+﻿@model RentalWebAppR.Models.UserModel
+
+@{
+    if (Session["UserName"] == null)
+    {
+        Response.Redirect("~/Manager/Login");
+    }
+    ViewBag.Title = Session["UserName"];
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Manager Portal</h1>
+    <p class="lead"></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h1>
+            Welcome @Session["UserName"]!
+        </h1>
+        <p>
+            As an Property Owner ,Administrator, you have the power of the listed actions below:
+            <br>
+            * Create/Update/Delete/Search/List any property manager account
+            <br>
+            * Update/Delete/Search/List any potential tenant account
+            <br>
+            * Full control of the Web Site
+        </p>
+
+        <p>
+            En tant que propriétaire, administrateur, vous avez le pouvoir des actions énumérées ci-dessous :
+            <br>
+            * Créer/Mettre à jour/Supprimer/Rechercher/Répertorier n'importe quel compte de gestionnaire immobilier
+            <br>
+            * Mettre à jour/supprimer/rechercher/lister tout compte locataire potentiel
+            <br>
+            * Contrôle total du site Web
+        </p>
+    </div>
+</div>
